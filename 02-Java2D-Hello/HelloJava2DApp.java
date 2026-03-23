@@ -33,6 +33,15 @@ class Hello2DFrame extends JFrame {
         g2d.drawLine(0,0, w,h);
         g2d.drawLine(0,h, w,0);
         g2d.setPaint(Color.white);
-        g2d.drawRect(w/4, h/4, (3/4)*w, (3/4)*h);
+        int x1 = w/4;
+        int y1 = h/4;
+
+        int x2 = (3*w)/4;
+        int y2 = (3*h)/4;
+
+        int largura = x2 - x1;
+        int altura = y2 - y1;
+
+        g2d.drawRect(x1, y1, largura, altura);
     }
 }
