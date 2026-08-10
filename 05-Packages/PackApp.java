@@ -14,6 +14,7 @@ class PackApp {
 class PackFrame extends JFrame {
     Rect r1;
     Ellipse e1;
+    Triangle t1;
 
     PackFrame () {
         this.addWindowListener (
@@ -27,11 +28,13 @@ class PackFrame extends JFrame {
         this.setSize(350, 350);
         this.r1 = new Rect(50,50, 100,30);
         this.e1 = new Ellipse(50,100, 100,30);
+        this.t1 = new Triangle(150,150, 100,250, 200,250);
     }
 
     public void paint (Graphics g) {
         super.paint(g);
         this.r1.paint(g);
         this.e1.paint(g);
+        this.t1.paint(g);
     }
 }
