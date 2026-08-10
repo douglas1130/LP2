@@ -26,14 +26,11 @@ class PaintFrame extends JFrame {
         this.setTitle("Painting Figures");
         this.setSize(350, 350);
 
-        this.r1 = new Rect(50, 50, 100, 30,
-                           Color.RED, Color.WHITE);
+        this.r1 = new Rect(50, 50, 100, 30, Color.RED, Color.WHITE);
 
-        this.r2 = new Rect(50, 100, 150, 50,
-                           Color.BLUE, Color.GREEN);
+        this.r2 = new Rect(50, 100, 150, 50, Color.BLUE, Color.GREEN);
 
-        this.r3 = new Rect(100, 200, 100, 80,
-                           Color.BLACK, Color.GRAY);
+        this.r3 = new Rect(100, 200, 100, 80, Color.BLACK, Color.GRAY);
     }
 
     public void paint(Graphics g) {
